@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.ViewPagerItemFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_background"
+        >
+
+        <ImageView
+            android:id="@+id/vp_image"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="400dp"
+            android:src="@drawable/books"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/vp_text"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            />
+
+        <Button
+            android:id="@+id/vp_btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#49CC3A"
+            android:elevation="3dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:visibility="visible"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ViewPagerFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.boredapp.ui.fragments.MainFragment"
+        tools:layout="@layout/fragment_main"
+        >
+        <action
+            android:id="@+id/action_MainFragment_to_ViewPagerFragment"
+            app:destination="@+id/ViewPagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ViewPagerFragment"
+        android:name="com.example.boredapp.ui.fragments.ViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager"
+        >
+        <action
+            android:id="@+id/action_ViewPagerFragment_to_MainFragment"
+            app:destination="@+id/MainFragment" />
+    </fragment>
+</navigation>
