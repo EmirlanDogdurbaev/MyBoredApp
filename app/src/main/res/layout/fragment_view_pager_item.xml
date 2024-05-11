@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_marginTop="50dp"
             android:layout_height="400dp"
-            android:src="@drawable/books"
+            android:src="@drawable/q1"
             android:scaleType="fitXY"
             />
 
